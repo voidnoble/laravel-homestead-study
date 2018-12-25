@@ -22,3 +22,12 @@ if (! function_exists('attachment_path')) {
     }
 }
 
+function gravatar_profile_url($email)
+{
+    return sprintf("//www.gravatar.com/%s", md5($email));
+}
+
+function gravatar_url($email, $size = 72)
+{
+    return sprintf("//www.gravatar.com/avatar/%s?s=%s", md5($email), $size);
+}

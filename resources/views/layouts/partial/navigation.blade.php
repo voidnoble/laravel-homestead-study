@@ -34,7 +34,7 @@
                             <i class="fa fa-user icon"></i> {{ auth()->user()->name }} <b class="caret"></b>
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a href="{{ route('session.destroy') }}"><i class="fa fa-sign-out icon"></i> Log out</a></li>
+                            <li><a href="{{ route('logout') }}"><i class="fa fa-sign-out icon"></i> Log out</a></li>
                         </ul>
                     </li>
                 @endif

@@ -13,6 +13,7 @@ const mix = require('laravel-mix');
 
 mix.js('resources/js/app.js', 'public/js')
     .scripts([
-        '../node_modules/google-code-prettify/src/run_prettify.js'
+        '../node_modules/google-code-prettify/src/run_prettify.js',
+        '../node_modules/select2/dist/js/select2.js'
     ], 'public/js/app.js')
    .sass('resources/sass/app.scss', 'public/css');

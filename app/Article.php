@@ -41,7 +41,7 @@ class Article extends Model
         return $this->hasOne(Comment::class, 'id', 'solution_id');
     }
 
-    public function attachements()
+    public function attachments()
     {
         return $this->hasMany(Attachment::class);
     }

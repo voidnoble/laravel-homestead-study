@@ -26,7 +26,7 @@ class AttachmentTableSeeder extends Seeder
             );
         });
 
-        $files = \App\Attachment::lists('name');
+        $files = \App\Attachment::pluck('name');
 
         if (!File::isDirectory(attachment_path())) {
             File::makeDirectory(attachment_path(), 777, true);
