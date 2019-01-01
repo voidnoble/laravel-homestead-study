@@ -11,6 +11,11 @@
 </div>
 
 <div class="form-group">
+    <label for="my-dropzone">Files</label>
+    <div id="my-dropzone" class="dropzone"></div>
+</div>
+
+<div class="form-group">
     @include('articles.partial.tagselector')
 </div>
 
@@ -22,3 +27,13 @@
         </label>
     </div>
 </div>
+
+@section('script')
+    <script>
+        Dropzone.autoDiscover = false;
+
+        var myDropzone = new Dropzone("div#my-dropzone", {
+            url: "/files",
+        });
+    </script>
+@stop

@@ -17,10 +17,10 @@
             <ul class="nav navbar-nav navbar-right">
                 @if(! auth()->check())
                     <li>
-                        <a href="{{ route('session.create') }}"><i class="fa fa-sign-in icon"></i> Login</a>
+                        <a href="{{ route('login') }}"><i class="fa fa-sign-in icon"></i> Login</a>
                     </li>
                     <li>
-                        <a href="{{ route('user.create') }}"><i class="fa fa-certificate icon"></i> Sign up</a>
+                        <a href="{{ route('register') }}"><i class="fa fa-certificate icon"></i> Sign up</a>
                     </li>
                 @else
                     <li>
