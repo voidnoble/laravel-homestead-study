@@ -2,9 +2,6 @@
 
 @section('style')
     <style>
-        body {
-            background: red;
-        }
     </style>
 @endsection
 

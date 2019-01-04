@@ -137,3 +137,6 @@ Route::resource('articles', 'ArticlesController');
 Route::get('tags/{id}/articles', 'ArticlesController@index')->name('tags.articles.index');
 
 Route::resource('articles', 'ArticlesController');
+
+Route::get('upload', 'UploadController@form');
+Route::post('upload', 'UploadController@save');
